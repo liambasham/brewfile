@@ -1,5 +1,6 @@
 brew "node"
 brew "python"
+brew "gh"
 cask "arc"
 cask "warp"
 cask "google-chrome"
