@@ -1,6 +1,18 @@
 # Brewfile Setup
 This repository stores a Homebrew `Brewfile` so you can recreate this machine setup quickly.
 
+## Fresh machine setup (nothing installed)
+Run this single command in Terminal:
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile && \
+eval "$(/opt/homebrew/bin/brew shellenv)" && \
+curl -fsSL https://raw.githubusercontent.com/liambasham/brewfile-repo/main/Brewfile -o ~/Brewfile && \
+brew bundle --file=~/Brewfile
+```
+> **Note:** This assumes Apple Silicon (M1/M2/M3). For Intel Macs, replace `/opt/homebrew` with `/usr/local`.
+
+
 ## Prerequisites
 - Install Homebrew first: https://brew.sh
 
