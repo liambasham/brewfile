@@ -7,7 +7,7 @@ Run this single command in Terminal:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile && \
 eval "$(/opt/homebrew/bin/brew shellenv)" && \
-curl -fsSL https://raw.githubusercontent.com/liambasham/brewfile-repo/main/Brewfile -o ~/Brewfile && \
+curl -fsSL https://raw.githubusercontent.com/BashamL/brewfile/main/Brewfile -o ~/Brewfile && \
 brew bundle --file=~/Brewfile
 ```
 > **Note:** This assumes Apple Silicon (M1/M2/M3). For Intel Macs, replace `/opt/homebrew` with `/usr/local`.
